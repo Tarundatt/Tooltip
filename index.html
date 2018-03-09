@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tooltip</title>
+	<style type="text/css">
+	body{text-align: center;}
+	/*--style for tooltip*/
+	.tooltip{
+		position: relative;
+		display: inline-block;
+		margin-top: 60px;
+		font-size: 40px;
+		text-align: center;
+		background-color:  #b3ffb3;
+
+	}
+	/*--style for tooltip-text*/
+	.tooltip .tooltip-text{
+		visibility: hidden;
+		width: 235px;
+		background-color: #9999ff;
+		color: #fff;
+		position: absolute;
+	}
+	/*--style tooltip right*/
+	.tooltip.t-right .tooltip-text{
+		left: 110%;
+	}
+
+	/*--style tooltip bottom*/
+	.tooltip.t-bottom .tooltip-text{
+		bottom: -110%;
+        right: -60%;
+	}
+
+	/*--style tooltip left*/
+	.tooltip.t-left .tooltip-text{
+		left: -200%;
+	}
+
+	/*--style tooltip top*/
+	.tooltip.t-top .tooltip-text{
+		left: -30%;
+        top: -100%;}
+
+    /* Tooltip Hover Triger */
+	.tooltip:hover .tooltip-text{
+		visibility: visible;
+	}	
+	</style>
+	
+</head>
+<body>
+
+	<div class="tooltip t-right">Youtube
+		<span class="tooltip-text">Youtube.com</span>
+	</div>
+	<br>
+
+	<div class="tooltip t-bottom">Facebook
+		<span class="tooltip-text">Facebook.com</span>
+	</div>
+	<br>
+
+	<div class="tooltip t-left">Google
+		<span class="tooltip-text">Google.com</span>
+	</div>
+	<br>
+
+	<div class="tooltip t-top">Twiter
+		<span class="tooltip-text">Twiter.com</span>
+	</div>
+
+</body>
+</html>
